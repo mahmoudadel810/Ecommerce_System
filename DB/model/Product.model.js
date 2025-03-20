@@ -2,7 +2,8 @@
 import mongoose from "mongoose"
 
 const productSchema = new mongoose.Schema({
-    // descriptions
+
+
     name: {
         type: String,
         required: true,
@@ -29,7 +30,6 @@ const productSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
-    // sepecifications
     colors: [String],
     size: [String],
     // images

@@ -75,3 +75,5 @@ const initApp = (app, express) => {
 // NER //
 
 export default initApp
+
+

@@ -11,7 +11,6 @@ export const addReview = async (req, res, next) => {
   if (!Product) {
     return next(new Error('in-valid productId', { cause: 400 }))
   }
-  // user buy the product
   const orders = await orderModel.find({
     userId: req.user._id,
     orderStatus: 'delivered',

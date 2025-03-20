@@ -1,15 +1,12 @@
 import userModel from '../../../DB/model/User.model.js'
-
 import pkg from 'bcryptjs'
-import {
-  tokenDecode,
-  tokenGeneration,
-} from '../../utils/GenerateAndVerifyToken.js'
+import {tokenDecode,tokenGeneration,} from '../../utils/GenerateAndVerifyToken.js'
 import sendEmail from '../../utils/sendEmail.js'
 import { customAlphabet } from 'nanoid'
-const nanoId = customAlphabet('123456789', 6)
+const nanoId = customAlphabet('123456789mmhhfkhrqdf', 8)
 
-//======================== signUp =========================================
+//============================== signUp =========================================
+
 export const signUp = async (req, res, next) => {
   const { userName, email, password, phone, DOB } = req.body
   const emailEixsts = await userModel.findOne({ email }).select('_id email')
