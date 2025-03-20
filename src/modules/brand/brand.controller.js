@@ -6,7 +6,7 @@ import cloudinary from "../../utils/cloudinary.js"
 
 
 export const addBrand = async (req, res, next) => {
-    const { name, } = req.body
+    const { name, } = req.body 
     const { subCategoryId, categoryId } = req.params
     const catergory = await categoryModel.findOne({ _id: categoryId })
     const subCategory = await subCategoryModel.findOne({ _id: subCategoryId, categoryId })

@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-
+//the connection object
 const connectDB  = async ()=>{
     return await mongoose.connect(process.env.DB_LOCAL)
     .then(res=>console.log(`DB Connected successfully on .........`))
@@ -7,4 +7,4 @@ const connectDB  = async ()=>{
 }
 
 
-export default connectDB;
+export default connectDB; 

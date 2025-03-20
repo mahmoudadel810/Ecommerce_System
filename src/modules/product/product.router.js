@@ -10,8 +10,8 @@ const router = Router()
 // router.get('/', (req, res) => {
 //     res.status(200).json({ message: "product Module" })
 // })
-
-router.post(
+ 
+router.post( 
   '/addProduct',
   validation(Headers, true),
   auth(),

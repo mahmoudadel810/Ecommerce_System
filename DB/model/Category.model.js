@@ -36,7 +36,7 @@ const categorySchema = new mongoose.Schema({
     toObject: { virtuals: true },
     timestamps: true
 })
-
+ 
 // subCategories
 categorySchema.virtual('SubCategories', {
     ref: 'subCategory',

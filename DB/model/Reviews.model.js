@@ -15,7 +15,7 @@ const reviewSchema = new mongoose.Schema(
     text: {
       type: String,
     },
-    rate: {
+    rate: { 
       type: Number,
       min: 1,
       max: 5,

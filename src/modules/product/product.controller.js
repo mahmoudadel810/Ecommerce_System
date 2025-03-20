@@ -6,7 +6,7 @@ import productModel from '../../../DB/model/Product.model.js'
 import subCategoryModel from '../../../DB/model/Subcategory.model.js'
 import cloudinary from '../../utils/cloudinary.js'
 import { pagination } from '../../utils/pagination.js'
-import ApiFeatures from '../../utils/apiFeatures.js'
+import ApiFeatures from '../../utils/apiFeatures.js' 
 
 export const addProduct = async (req, res, next) => {
   // IDs

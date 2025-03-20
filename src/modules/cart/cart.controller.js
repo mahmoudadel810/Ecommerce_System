@@ -25,7 +25,7 @@ export const addToCart = async (req, res, next) => {
             products: [{ productId, quantity }]
         })
         return res.status(201).json({ messages: "Done", savedCart })
-    }
+    } 
 
     // update exist product 
     let isProductExist = false;

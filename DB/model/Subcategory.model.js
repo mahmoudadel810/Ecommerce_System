@@ -28,7 +28,7 @@ const subCategorySchema = new mongoose.Schema({
 
     slug: {
         type: String,
-        required: true
+        required: true 
     },
     customId: String,
     categoryId: {

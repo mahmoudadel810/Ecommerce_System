@@ -7,4 +7,4 @@ export const addBrandSchema = Joi.object({
     file: generalFields.file.required(),
     categoryId: Joi.string().required(),
     subCategoryId: Joi.string().required(),
-}).required()
+}).required() 

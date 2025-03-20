@@ -10,7 +10,7 @@ const router = Router({ mergeParams: true })
 
 
 router.post('/addBrand',
-    auth(endPoints.CREAT_BRAND),
+    auth(endPoints.CREAT_BRAND), 
     fileUpload({}).single('logo'),
     validation(validators.addBrandSchema),
     asyncHandler(controllers.addBrand)

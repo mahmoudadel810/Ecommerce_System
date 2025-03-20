@@ -10,7 +10,7 @@ const router = Router()
 
 router.post(
   '/createOrder',
-  auth(endPoints.CREAT_ORDER),
+  auth(endPoints.CREAT_ORDER), 
   validation(createOrder),
   asyncHandler(controllers.createOrder),
 )

@@ -10,7 +10,7 @@ export const signUpSchema = Joi.object({
     phone: Joi.string().required(),
     DOB: Joi.string().optional()
 }).required()
-
+ 
 
 
 export const logInSchema = Joi.object({

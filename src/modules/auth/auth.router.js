@@ -6,7 +6,7 @@ import { logInSchema, signUpSchema } from "./auth.validation.js";
 const router = Router()
 
 
-
+ 
 
 router.post('/signUp', validation(signUpSchema), asyncHandler(controllers.signUp))
 router.get('/confirmEmail/:token', asyncHandler(controllers.confirmEmail))

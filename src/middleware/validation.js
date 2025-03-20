@@ -32,7 +32,7 @@ export const validation = (schema, isHeadersSent = false) => {
             ...req.query,
             ...req.params,
             // ...req.headers,
-        }
+        } 
         if (req.file || req.files) requestData.file = req.file || req.files
         if (req.headers?.authorization && isHeadersSent) requestData = { authorization: req.headers.authorization }
         const validationResult = schema.validate(requestData, {

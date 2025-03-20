@@ -6,7 +6,7 @@ import { customAlphabet } from 'nanoid'
 const nanoId = customAlphabet('123456789mmhhfkhrqdf', 8)
 
 //============================== signUp =========================================
-
+ 
 export const signUp = async (req, res, next) => {
   const { userName, email, password, phone, DOB } = req.body
   const emailEixsts = await userModel.findOne({ email }).select('_id email')

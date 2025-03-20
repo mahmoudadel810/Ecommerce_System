@@ -37,7 +37,7 @@ const productSchema = new mongoose.Schema({
     subImgaes: { type: [Object] },
 
     // IDs
-    createdBy: {
+    createdBy: { 
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
         required: true

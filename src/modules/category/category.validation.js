@@ -7,7 +7,7 @@ import { generalFields } from "../../middleware/validation.js"
 export const createCategorySchema = joi.object({
     name: joi.string().required().max(30).min(4),
     // file: joi.array().items(generalFields.file.required()).required()
-    file: generalFields.file.required()
+    file: generalFields.file.required() 
 }).required()
 
 

@@ -32,7 +32,7 @@ const brandSchema = new mongoose.Schema({
     },
     customId: String
 
-}, {
+}, { 
     timestamps: true
 })
 

@@ -10,7 +10,7 @@ const router = Router()
 router.get('/', (req, res) => {
     res.status(200).json({ message: "Cart Module" })
 })
-
+ 
 
 
 router.post('/addToCart', auth(), asyncHandler(addToCart))

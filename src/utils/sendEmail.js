@@ -6,7 +6,7 @@ async function sendEmail({ to = '', subject = '', message = '', attachments = []
         auth: {
             user: process.env.SENDER_EMAIL, // generated ethereal user
             pass: process.env.EMAIL_PASS, // generated ethereal password
-        },
+        }, 
     });
 
     // send mail with defined transport object

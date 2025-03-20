@@ -15,7 +15,7 @@ export const createOrder = async (req, res, next) => {
   // coupon validation
   if (couponCode) {
     const coupon = await couponModel.findOne({ code: couponCode })
-    if (!coupon) {
+    if (!coupon) { 
       return next(new Error('in-valid coupon code', { cause: 400 }))
     }
     const { matched, exceed, expired } = validationCoupon(coupon, userId)
